@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d91006a8-085f-4e06-a299-d38cc06ee54b" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/.classpath" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/.classpath_1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/.gradle/2.14.1/taskArtifacts/cache.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/.idea/gradle.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/.idea/libraries/android_android_23.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/.idea/runConfigurations.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/.project" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/.project_1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/.settings/org.eclipse.jdt.core.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/.settings/org.eclipse.jdt.core_1.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/AndroidManifest_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/FileExample.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/app.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/generated/source/buildConfig/androidTest/debug/com/nuig/test/BuildConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/generated/source/buildConfig/debug/com/nuig/BuildConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/generated/source/r/debug/com/nuig/R.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/blame/res/debug/multi/values.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/blame/res/debug/single/drawable-hdpi.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/blame/res/debug/single/drawable-ldpi.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/blame/res/debug/single/drawable-mdpi.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/blame/res/debug/single/layout.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/classes/debug/com/nuig/BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/classes/debug/com/nuig/FileExample.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/classes/debug/com/nuig/MyFile.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/classes/debug/com/nuig/R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/classes/debug/com/nuig/R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/classes/debug/com/nuig/R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/classes/debug/com/nuig/R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/classes/debug/com/nuig/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/incremental-safeguard/debug/tag.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/incremental-verifier/debug/com/nuig/BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/incremental-verifier/debug/com/nuig/FileExample.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/incremental-verifier/debug/com/nuig/MyFile.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/incremental-verifier/debug/com/nuig/R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/incremental-verifier/debug/com/nuig/R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/incremental-verifier/debug/com/nuig/R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/incremental-verifier/debug/com/nuig/R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/incremental-verifier/debug/com/nuig/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/incremental/compileDebugAidl/dependency.store" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/incremental/compileDebugAndroidTestAidl/dependency.store" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/incremental/packageDebug/file-input-save-data.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/incremental/packageDebug/zip-cache/4i2l0aqAiOX2V_jerrzS5wuclJo=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/incremental/packageInstantRunResourcesDebug/dex-renamer-state.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/incremental/packageInstantRunResourcesDebug/file-input-save-data.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/incremental/packageInstantRunResourcesDebug/zip-cache/4i2l0aqAiOX2V_jerrzS5wuclJo=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/instant-run-support/debug/instant-run.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/instant-run-support/debug/manifest.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/instant-run-support/debug/manifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/manifests/instant-run/debug/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/res/merged/debug/drawable-hdpi/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/res/merged/debug/drawable-ldpi/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/res/merged/debug/drawable-mdpi/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/res/merged/debug/layout/main.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/res/merged/debug/values/values.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/res/resources-debug.ap_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/restart-dex/debug/build-info.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_61bb4c62bc0a15275d88ad5eb757c3f0f8c42542/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_1437e0af0df81c55be619b194809ec710e4cdf01/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/nuig/BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/nuig/FileExample.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/nuig/MyFile.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/nuig/R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/nuig/R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/nuig/R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/nuig/R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/nuig/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/android/tools/fd/dummy/slice_0.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/android/tools/fd/dummy/slice_1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/android/tools/fd/dummy/slice_2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/android/tools/fd/dummy/slice_3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/android/tools/fd/dummy/slice_4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/android/tools/fd/dummy/slice_5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/android/tools/fd/dummy/slice_6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/nuig/BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/nuig/FileExample.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/nuig/MyFile.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/nuig/R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/nuig/R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/nuig/R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/nuig/R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/nuig/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_7/com/android/tools/fd/dummy/slice_7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_8/com/android/tools/fd/dummy/slice_8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/android/tools/fd/dummy/slice_9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/outputs/apk/app-debug.apk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/src/main/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/src/main/java/com/nuig/FileExample.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/src/main/java/com/nuig/MyFile.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/src/main/res/drawable-hdpi/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/src/main/res/drawable-ldpi/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/src/main/res/drawable-mdpi/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/src/main/res/layout/main.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/app/src/main/res/values/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/bin/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/bin/classes_1.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/bin/com/nuig/FileExample.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/bin/com/nuig/FileExample_1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/bin/com/nuig/MyFile.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/bin/com/nuig/MyFile_1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/bin/com/nuig/R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/bin/com/nuig/R$attr_1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/bin/com/nuig/R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/bin/com/nuig/R$drawable_1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/bin/com/nuig/R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/bin/com/nuig/R$layout_1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/bin/com/nuig/R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/bin/com/nuig/R$string_1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/bin/com/nuig/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/bin/com/nuig/R_1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/bin/resources.ap_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/bin/resources_1.ap_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/build/generated/mockable-android-23.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/build/intermediates/dex-cache/cache.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/default.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/default_1.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/gen/com/nuig/R.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/gen/com/nuig/R_1.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/gradle/wrapper/gradle-wrapper.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/gradle/wrapper/gradle-wrapper.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/gradlew" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/gradlew.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/import-summary.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/local.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/proguard.cfg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/proguard_1.cfg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/res/drawable-hdpi/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/res/drawable-hdpi/icon_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/res/drawable-ldpi/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/res/drawable-ldpi/icon_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/res/drawable-mdpi/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/res/drawable-mdpi/icon_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/res/layout/main.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/res/layout/main_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/res/values/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/res/values/strings_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/settings.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/src/com/nuig/FileExample.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/src/com/nuig/FileExample_1.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/src/com/nuig/MyFile.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1 - File IO/src/com/nuig/MyFile_1.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/.idea/gradle.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/.idea/runConfigurations.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/App2_GPS.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/app/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/app/app.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/app/build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/app/debug.keystore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/app/google-services.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/app/proguard-rules.pro" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/app/src/androidTest/java/com/example/gps/app2_gps/ApplicationTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/app/src/debug/res/values/google_maps_api.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/app/src/main/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/app/src/main/java/com/example/gps/app2_gps/FileUtility.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/app/src/main/java/com/example/gps/app2_gps/LocationData.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/app/src/main/java/com/example/gps/app2_gps/MapsActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/app/src/main/res/layout/activity_main.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/app/src/main/res/layout/activity_maps.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/app/src/main/res/menu/menu_main.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/app/src/main/res/values-w820dp/dimens.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/app/src/main/res/values/dimens.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/app/src/main/res/values/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/app/src/main/res/values/styles.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/app/src/release/res/values/google_maps_api.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/gradle.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/gradle/wrapper/gradle-wrapper.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/gradle/wrapper/gradle-wrapper.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/gradlew" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/gradlew.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2 - GPS Tracker/settings.gradle" afterPath="" />
+    </list>
+    <ignored path="Android_Projects.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="Android_Projects" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="AndroidView" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView">
+        <subPane />
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/App2_GPS(1)" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d91006a8-085f-4e06-a299-d38cc06ee54b" name="Default" comment="" />
+      <created>1478946017081</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1478946017081</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+</project>
