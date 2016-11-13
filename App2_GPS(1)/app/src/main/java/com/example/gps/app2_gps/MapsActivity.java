@@ -171,8 +171,9 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
         //App 2  todo: add marker to map here
         Calendar cal = Calendar.getInstance();
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyy HH:mm:ss", new Locale("Ireland"));
+        LatLng currentLoc = new LatLng(arg0.getLatitude(), arg0.getLongitude());
 
-        mMap.addMarker(new MarkerOptions().position(new LatLng(arg0.getLatitude(), arg0.getLongitude()))
+        mMap.addMarker(new MarkerOptions().position(currentLoc)
                 .title(String.valueOf(cal.getTime()))
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
         try {
@@ -181,6 +182,8 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
             Log.e("GPS", "exception occured " + e.getMessage());
         }
         //App 2  todo: upload location to Firebase
+        // mDatabase.child("users").child(userId).setValue(user);
+        // mDatabase.push(currentLoc);
         myFile.writeLine(sdf.format(cal.getTime()) + "," + String.valueOf(arg0.getLatitude()) + "," + String.valueOf(arg0.getLongitude()));
     }
 
