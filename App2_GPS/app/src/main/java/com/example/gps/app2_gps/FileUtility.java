@@ -30,13 +30,13 @@ public class FileUtility {
             }
             else
             {
-                file = new File(root, "//" + fileName); // File(context.getFilesDir(), "//" + fileName);
+                file = new File(context.getFilesDir(), "//" + fileName); // File(root, "//" + fileName);
                 if (!file.exists()) {
                     file.createNewFile();
                 }
             }
         } catch (IOException e) {
-            Log.e("Error", "Failed to create a new file");
+            Log.e("Error", "fail to create a new file");
         }
 
     }
@@ -49,14 +49,13 @@ public class FileUtility {
             in = new BufferedReader(datawriter);
             if (file.exists()) {
                 String str = null;
-                while((str=in.readLine())!=null)
-                {
-                    returnString.append(str + "\n");
+                while((str=in.readLine())!=null) {
+                    returnString.append(str).append("\n");
                 }
             }
             in.close();
         } catch (IOException e) {
-            Log.e("Error", "Failed to write file");
+            Log.e("Error", "fail to write file");
         }
         return returnString.toString();
     }

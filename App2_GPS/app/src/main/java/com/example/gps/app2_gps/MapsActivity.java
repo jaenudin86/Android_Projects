@@ -1,48 +1,39 @@
 package com.example.gps.app2_gps;
 
-import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Location;
-import android.location.LocationListener;
 import android.location.LocationManager;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.appindexing.Thing;
-import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.drive.Permission;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.firebase.database.*;
 
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Locale;
+import java.util.Date;
+import java.util.Map;
 
 
-public class MapsActivity extends FragmentActivity implements LocationListener, OnMapReadyCallback {
+public class MapsActivity extends FragmentActivity implements android.location.LocationListener, OnMapReadyCallback {
 
     private LocationManager lm;
     private FileUtility myFile;
     private GoogleMap mMap; // Might be null if Google Play services APK is not available.
     private DatabaseReference mDatabase;
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
-    private GoogleApiClient client;
+    private int UPDATE_TIME = 2000;
+    private int MIN_UPDATE_DISTANCE = 10;
+    private int ZOOM_LEVEL = 15;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,24 +44,17 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
         lm = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         try {
             //App 2 todo: request updates here
-            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED &&
-                    ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-                // lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1000, 0, this);
-                lm.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 1000, 0, this);
+            if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                lm.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, UPDATE_TIME, MIN_UPDATE_DISTANCE, this);
+            }
+            if (lm != null) {
+                Location location = lm.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
             }
         } catch (Exception e) {
             Log.e("GPS", "exception occured " + e.getMessage());
         }
 
-        // Create a new file if it doesnt exist to save GPS data
-        String filename = "Android_Lab2.txt";
-        myFile = new FileUtility();
-        myFile.createFile(getApplicationContext(), filename);
-
         setUpMapIfNeeded();
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
     @Override
@@ -85,7 +69,7 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
      * call {@link #setUpMap()} once when {@link #mMap} is not null.
      * <p/>
      * If it isn't installed {@link SupportMapFragment} (and
-     * {@link MapView MapView}) will show a prompt for the user to
+     * {@link com.google.android.gms.maps.MapView MapView}) will show a prompt for the user to
      * install/update the Google Play services APK on their device.
      * <p/>
      * A user can return to this FragmentActivity after following the prompt and correctly
@@ -125,22 +109,12 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
         ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                for (DataSnapshot locSnapshot : dataSnapshot.getChildren()) {
+                for (DataSnapshot locSnapshot: dataSnapshot.getChildren()) {
                     LocationData loc = locSnapshot.getValue(LocationData.class);
-
-                    // Read contents of the GPS data file
-                    String contents = myFile.readAll();
-                    String[] location_data = contents.split("\n");
-
+                    //System.out.println(post);
                     if (loc != null) {
                         // App 2: Todo: Add a map marker here based on the loc downloaded
-                        for (String aLocation_data : location_data) {
-                            String[] locations = aLocation_data.split("\\s*,\\s*");
-                            // Add markers on the map at locations stored in the GPS data file
-                            mMap.addMarker(new MarkerOptions()
-                                    .position(new LatLng(Double.valueOf(locations[1]), Double.valueOf(locations[2])))
-                                    .title(String.valueOf(locations[0])));
-                        }
+                        mMap.addMarker(new MarkerOptions().position(new LatLng(loc.latitude, loc.longitude)));
                     }
                 }
                 ref.removeEventListener(this);
@@ -152,39 +126,29 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
             }
         });
 
-
         //App 2  todo: center and zoom the map here
         // Set the default center point and zoom properties
         LatLng engBuild = new LatLng(53.283912, -9.063874);
         CameraUpdate center = CameraUpdateFactory.newLatLng(engBuild);
-        CameraUpdate zoom = CameraUpdateFactory.zoomTo(15);
+        CameraUpdate zoom = CameraUpdateFactory.zoomTo(ZOOM_LEVEL);
         // Add the default center point and zoom properties when setting up the map
         mMap.moveCamera(center);
         mMap.animateCamera(zoom);
-        mMap.addMarker(new MarkerOptions().position(engBuild)
-                                        .title("NUIG Engineering Building")
-                                        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
+        mMap.addMarker(new MarkerOptions().position(engBuild).title("NUIG Engineering Building")
+                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
     }
-
 
     public void onLocationChanged(Location arg0) {
         //App 2  todo: add marker to map here
-        Calendar cal = Calendar.getInstance();
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyy HH:mm:ss", new Locale("Ireland"));
-        LatLng currentLoc = new LatLng(arg0.getLatitude(), arg0.getLongitude());
-
-        mMap.addMarker(new MarkerOptions().position(currentLoc)
-                .title(String.valueOf(cal.getTime()))
+        // Zoom in to the current location on the map
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(arg0.getLatitude(), arg0.getLongitude()), ZOOM_LEVEL));
+        // Add marker at the current location on the map
+        mMap.addMarker(new MarkerOptions().position(new LatLng(arg0.getLatitude(), arg0.getLongitude()))
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
-        try {
-            mMap.setMyLocationEnabled(true);
-        } catch (SecurityException e) {
-            Log.e("GPS", "exception occured " + e.getMessage());
-        }
+
         //App 2  todo: upload location to Firebase
-        // mDatabase.child("users").child(userId).setValue(user);
-        // mDatabase.push(currentLoc);
-        myFile.writeLine(sdf.format(cal.getTime()) + "," + String.valueOf(arg0.getLatitude()) + "," + String.valueOf(arg0.getLongitude()));
+        LocationData locationData = new LocationData(arg0.getLatitude(), arg0.getLongitude());
+        mDatabase.child("locations").push().setValue(locationData);
     }
 
     public void onProviderDisabled(String arg0) {
@@ -197,42 +161,5 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
 
     public void onStatusChanged(String arg0, int arg1, Bundle arg2) {
         Log.e("GPS", "status changed to " + arg0 + " [" + arg1 + "]");
-    }
-
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
-    public Action getIndexApiAction() {
-        Thing object = new Thing.Builder()
-                .setName("Maps Page")
-                // TODO: Define a title for the content shown.
-                // TODO: Make sure this auto-generated URL is correct.
-                .setUrl(Uri.parse("http://[ENTER-YOUR-URL-HERE]"))
-                .build();
-        return new Action.Builder(Action.TYPE_VIEW)
-                .setObject(object)
-                .setActionStatus(Action.STATUS_TYPE_COMPLETED)
-                .build();
-    }
-
-    @Override
-    public void onStart() {
-        super.onStart();
-
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client.connect();
-        AppIndex.AppIndexApi.start(client, getIndexApiAction());
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        AppIndex.AppIndexApi.end(client, getIndexApiAction());
-        client.disconnect();
     }
 }

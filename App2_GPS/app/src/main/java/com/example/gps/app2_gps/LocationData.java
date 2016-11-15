@@ -11,8 +11,11 @@ public class LocationData {
 
     public LocationData() {}
 
-    public LocationData(double lati, double longi) {
+    public LocationData(double lati,double longi) {
         longitude = longi;
         latitude = lati;
     }
+
+
+
 }
