@@ -31,8 +31,8 @@ public class MapsActivity extends FragmentActivity implements android.location.L
     private FileUtility myFile;
     private GoogleMap mMap; // Might be null if Google Play services APK is not available.
     private DatabaseReference mDatabase;
-    private int UPDATE_TIME = 2000;
-    private int MIN_UPDATE_DISTANCE = 10;
+    private int UPDATE_TIME = 200;
+    private int MIN_UPDATE_DISTANCE = 1;
     private int ZOOM_LEVEL = 15;
 
     @Override
@@ -45,8 +45,12 @@ public class MapsActivity extends FragmentActivity implements android.location.L
         try {
             //App 2 todo: request updates here
             if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                lm.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, UPDATE_TIME, MIN_UPDATE_DISTANCE, this);
+                // boolean tre = ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED;
+                // boolean ert = ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED;
+                return;
             }
+            lm.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, UPDATE_TIME, MIN_UPDATE_DISTANCE, this);
+            lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, UPDATE_TIME, MIN_UPDATE_DISTANCE, this);
             if (lm != null) {
                 Location location = lm.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
             }
@@ -140,11 +144,8 @@ public class MapsActivity extends FragmentActivity implements android.location.L
 
     public void onLocationChanged(Location arg0) {
         //App 2  todo: add marker to map here
-        // Zoom in to the current location on the map
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(arg0.getLatitude(), arg0.getLongitude()), ZOOM_LEVEL));
         // Add marker at the current location on the map
-        mMap.addMarker(new MarkerOptions().position(new LatLng(arg0.getLatitude(), arg0.getLongitude()))
-                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(arg0.getLatitude(), arg0.getLongitude())));
 
         //App 2  todo: upload location to Firebase
         LocationData locationData = new LocationData(arg0.getLatitude(), arg0.getLongitude());
