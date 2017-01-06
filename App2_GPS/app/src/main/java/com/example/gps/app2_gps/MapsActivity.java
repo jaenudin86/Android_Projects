@@ -8,8 +8,6 @@ import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
-
-import com.google.android.gms.drive.Permission;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -17,12 +15,8 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.firebase.database.*;
-
-import java.util.Date;
-import java.util.Map;
 
 
 public class MapsActivity extends FragmentActivity implements android.location.LocationListener, OnMapReadyCallback {
@@ -44,20 +38,17 @@ public class MapsActivity extends FragmentActivity implements android.location.L
         lm = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         try {
             //App 2 todo: request updates here
-            if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                // boolean tre = ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED;
-                // boolean ert = ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED;
+            if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
+                    ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
                 return;
             }
             lm.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, UPDATE_TIME, MIN_UPDATE_DISTANCE, this);
             lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, UPDATE_TIME, MIN_UPDATE_DISTANCE, this);
-            if (lm != null) {
-                Location location = lm.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
-            }
+        } catch (SecurityException e) {
+            Log.e("GPS", "exception occured " + e.getMessage());
         } catch (Exception e) {
             Log.e("GPS", "exception occured " + e.getMessage());
         }
-
         setUpMapIfNeeded();
     }
 
@@ -89,7 +80,6 @@ public class MapsActivity extends FragmentActivity implements android.location.L
             ((SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map)).getMapAsync(this);
         }
     }
-
 
     @Override
     public void onMapReady(GoogleMap map) {
@@ -148,7 +138,9 @@ public class MapsActivity extends FragmentActivity implements android.location.L
         mMap.addMarker(new MarkerOptions().position(new LatLng(arg0.getLatitude(), arg0.getLongitude())));
 
         //App 2  todo: upload location to Firebase
+        // Create a new Location Data object
         LocationData locationData = new LocationData(arg0.getLatitude(), arg0.getLongitude());
+        // Add the object to the firebase database
         mDatabase.child("locations").push().setValue(locationData);
     }
 
