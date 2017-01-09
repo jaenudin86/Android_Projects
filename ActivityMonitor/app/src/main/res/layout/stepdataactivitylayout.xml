@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ui__object"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.thomas.activitymonitor.StepDataActivity">
+
+    <TableRow>
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:text="Step Count"
+            android:gravity="center"
+            android:padding="4dp" />
+        <TextView
+            android:text="Time"
+            android:gravity="center"
+            android:padding="4dp" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:text="23563"
+            android:gravity="center"
+            android:padding="4dp" />
+        <TextView
+            android:text="12:20:31"
+            android:gravity="center"
+            android:padding="4dp" />
+    </TableRow>
+</TableLayout>

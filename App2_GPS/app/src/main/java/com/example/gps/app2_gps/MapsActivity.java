@@ -44,8 +44,6 @@ public class MapsActivity extends FragmentActivity implements android.location.L
             }
             lm.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, UPDATE_TIME, MIN_UPDATE_DISTANCE, this);
             lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, UPDATE_TIME, MIN_UPDATE_DISTANCE, this);
-        } catch (SecurityException e) {
-            Log.e("GPS", "exception occured " + e.getMessage());
         } catch (Exception e) {
             Log.e("GPS", "exception occured " + e.getMessage());
         }

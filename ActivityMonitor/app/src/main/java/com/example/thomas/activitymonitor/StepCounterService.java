@@ -19,7 +19,7 @@ public class StepCounterService extends Activity implements SensorEventListener 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        // setContentView(R.layout.main);
         count = (TextView) findViewById(R.id.count);
 
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
